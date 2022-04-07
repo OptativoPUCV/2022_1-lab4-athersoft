@@ -86,3 +86,9 @@ hashmap.c:90:26: error: array subscript is not an integer
                           ^
 Compilation failed
 f3cd0dd
+Thu Apr  7 15:56:34 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|4
+total_score: 30/70
+0ee900a
