@@ -70,3 +70,19 @@ Thu Apr  7 15:47:18 UTC 2022:
  tests:  5|4
 total_score: 30/70
 cb6f1ce
+Thu Apr  7 15:56:08 UTC 2022: 
+ hashmap.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:86:9: error: lvalue required as left operand of assignment
+   index = hash(key, map-> capacity);
+         ^
+hashmap.c:87:20: error: array subscript is not an integer
+   if(map -> buckets[index] == NULL){
+                    ^
+hashmap.c:90:26: error: array subscript is not an integer
+     return map -> buckets[index];
+                          ^
+Compilation failed
+f3cd0dd
