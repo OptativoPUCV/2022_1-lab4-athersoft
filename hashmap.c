@@ -87,7 +87,7 @@ Pair * searchMap(HashMap * map,  char * key) {
   if(map -> buckets[index] == NULL){
     return NULL;
   }else{
-    while(map -> buckets[index] -> key != NULL && map -> buckets[index] -> key != key){
+    while(is_equal(map ->buckets[index], key) == 0){
       index++;
       if(map -> buckets[index] -> key == NULL){
         return NULL;
