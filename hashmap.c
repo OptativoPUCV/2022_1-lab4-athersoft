@@ -70,7 +70,7 @@ void enlarge(HashMap * map) {
 HashMap * createMap(long capacity) {
     HashMap *map = (HashMap*) malloc(sizeof(HashMap));
     //map -> buckets = malloc(sizeof(Pair));
-    //map -> buckets = NULL;
+    map -> buckets[0] = NULL;
     map -> size = 0;
     map -> capacity = capacity;
     map -> current = -1;
