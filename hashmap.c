@@ -80,7 +80,7 @@ HashMap * createMap(long capacity) {
 void eraseMap(HashMap * map,  char * key) {    
   long index = hash(key, map-> capacity);
   map -> buckets[index] -> key = NULL;
-  size--;
+  map->size--;
 
 }
 
