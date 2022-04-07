@@ -91,6 +91,9 @@ Pair * searchMap(HashMap * map,  char * key) {
     }else{
       index++;
     }
+    if(map ->buckets[index] == NULL){
+      return NULL;
+    }
   }
   return NULL;
 }
