@@ -212,3 +212,15 @@ Thu Apr  7 16:15:31 UTC 2022:
  tests:  8|3
 total_score: 40/70
 5db64e8
+Thu Apr  7 16:15:49 UTC 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:83:3: error: ‘size’ undeclared (first use in this function); did you mean ‘sinl’?
+   size--;
+   ^~~~
+   sinl
+hashmap.c:83:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c46d9a7
