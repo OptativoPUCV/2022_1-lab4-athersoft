@@ -170,3 +170,8 @@ hashmap.c:90:33: error: comparison of distinct pointer types lacks a cast [-Werr
 cc1: all warnings being treated as errors
 Compilation failed
 c9f3bb6
+Thu Apr  7 16:06:21 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+3e42115
