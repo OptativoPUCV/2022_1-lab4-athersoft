@@ -1,0 +1,11 @@
+Thu Apr  7 15:36:34 UTC 2022: 
+ hashmap.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:45:24: error: ‘HashMap {aka struct HashMap}’ has no member named ‘bucket’; did you mean ‘buckets’?
+     if(is_equal(map -> bucket[index]-> key, key)){
+                        ^~~~~~
+                        buckets
+Compilation failed
+7ede746
