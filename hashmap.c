@@ -80,11 +80,8 @@ HashMap * createMap(long capacity) {
 void eraseMap(HashMap * map,  char * key) { 
   long index = hash(key, map-> capacity);
   if(map -> buckets[index]->key != NULL){
-  while(is_equal(map ->buckets[index]->key, key) == 0){
+  while(is_equal(map ->buckets[index]->key, key) == 0 && map -> buckets[index] != NULL){
     index++;
-    if(index >= map -> capacity){
-      break;
-    }
   }
     map -> buckets[index] -> key = NULL;
     map->size--;
