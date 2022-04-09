@@ -259,3 +259,16 @@ hashmap.c:82:10: error: lvalue required as increment operand
           ^~
 Compilation failed
 be13125
+Sat Apr  9 22:49:46 UTC 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:85:8: error: redefinition of ‘index’
+   long index = hash(key, map-> capacity);
+        ^~~~~
+hashmap.c:81:8: note: previous definition of ‘index’ was here
+   long index = hash(key, map-> capacity);
+        ^~~~~
+Compilation failed
+acdb7b7
