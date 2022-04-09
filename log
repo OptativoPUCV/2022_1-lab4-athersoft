@@ -402,3 +402,9 @@ hashmap.c:109:28: error: expected expression before ‘)’ token
                             ^
 Compilation failed
 3563b50
+Sat Apr  9 23:41:22 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|2
+total_score: 50/70
+be9efdb
