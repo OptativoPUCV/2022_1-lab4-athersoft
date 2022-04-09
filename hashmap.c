@@ -82,7 +82,7 @@ void eraseMap(HashMap * map,  char * key) {
   if(map -> buckets[index]->key != NULL){
   while(is_equal(map ->buckets[index]->key, key) == 0){
     index++;
-    if(is_equal(map -> buckets[index] -> key, NULL)){
+    if(index >= map -> capacity){
       break;
     }
   }
