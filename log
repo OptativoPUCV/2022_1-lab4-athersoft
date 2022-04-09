@@ -246,3 +246,16 @@ hashmap.c:83:22: error: array subscript is not an integer
                       ^
 Compilation failed
 6eee1ed
+Sat Apr  9 22:49:03 UTC 2022: 
+ hashmap.c | 3 ---
+ 1 file changed, 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:81:31: error: array subscript is not an integer
+   while(is_equal(map ->buckets[index]->key, key) == 0){
+                               ^
+hashmap.c:82:10: error: lvalue required as increment operand
+     index++;
+          ^~
+Compilation failed
+be13125
