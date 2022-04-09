@@ -323,3 +323,15 @@ Sat Apr  9 22:59:19 UTC 2022:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 3b7895f
+Sat Apr  9 23:00:03 UTC 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:86:6: error: implicit declaration of function ‘isequal’; did you mean ‘is_equal’? [-Werror=implicit-function-declaration]
+   if(isequal(map -> buckets[index] -> key, key)){
+      ^~~~~~~
+      is_equal
+cc1: all warnings being treated as errors
+Compilation failed
+cb7987b
