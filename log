@@ -380,3 +380,9 @@ Sat Apr  9 23:09:55 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 a4c2b18
+Sat Apr  9 23:18:42 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|3
+total_score: 40/70
+57f18dd
