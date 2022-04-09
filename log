@@ -345,3 +345,13 @@ Sat Apr  9 23:03:44 UTC 2022:
  1 file changed, 4 insertions(+), 2 deletions(-)
  tests:  0|0
 687dc86
+Sat Apr  9 23:04:25 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:82:30: error: expected identifier before ‘!=’ token
+   if(map -> buckets[index]-> != NULL){
+                              ^~
+Compilation failed
+70aef73
