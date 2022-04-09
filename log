@@ -230,3 +230,19 @@ Thu Apr  7 16:15:57 UTC 2022:
  tests:  9|3
 total_score: 40/70
 b86054e
+Sat Apr  9 22:47:11 UTC 2022: 
+ hashmap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:81:31: error: array subscript is not an integer
+   while(is_equal(map ->buckets[index]->key, key) == 0){
+                               ^
+hashmap.c:82:11: error: lvalue required as increment operand
+     index ++;
+           ^~
+hashmap.c:83:22: error: array subscript is not an integer
+     if(map -> buckets[index] == NULL){
+                      ^
+Compilation failed
+6eee1ed
