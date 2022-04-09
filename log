@@ -272,3 +272,8 @@ hashmap.c:81:8: note: previous definition of ‘index’ was here
         ^~~~~
 Compilation failed
 acdb7b7
+Sat Apr  9 22:50:00 UTC 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|0
+dca40d3
