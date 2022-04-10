@@ -67,7 +67,7 @@ void enlarge(HashMap * map) {
     long auxCapacity = map -> capacity;
   
     map -> capacity = map -> capacity*2;
-    map -> buckets = (Pair*) realloc(auxCapacity*2, sizeof(Pair));
+    map -> buckets = (Pair*) realloc((map -> capacity), sizeof(Pair));
     map -> size = 0;
 
   for(int i = 0; i<auxCapacity; i++){
