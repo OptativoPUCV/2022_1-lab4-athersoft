@@ -458,3 +458,14 @@ Sun Apr 10 00:15:35 UTC 2022:
  tests:  16|1
 total_score: 60/70
 9f144e7
+Sun Apr 10 00:18:55 UTC 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:66:13: error: unused variable ‘auxBuckets’ [-Werror=unused-variable]
+     Pair ** auxBuckets = map -> buckets;
+             ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+27f72f4
