@@ -469,3 +469,23 @@ hashmap.c:66:13: error: unused variable ‘auxBuckets’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 27f72f4
+Sun Apr 10 00:28:11 UTC 2022: 
+ hashmap.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:70:38: error: ‘capacity’ undeclared (first use in this function); did you mean ‘auxCapacity’?
+     map -> buckets = (Pair*) realloc(capacity, sizeof(Pair));
+                                      ^~~~~~~~
+                                      auxCapacity
+hashmap.c:70:38: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:74:15: error: ‘HashMap {aka struct HashMap}’ has no member named ‘auxBuckets’; did you mean ‘buckets’?
+     if(map -> auxBuckets[i] != NULL){
+               ^~~~~~~~~~
+               buckets
+hashmap.c:75:17: error: ‘HashMap {aka struct HashMap}’ has no member named ‘auxBuckets’; did you mean ‘buckets’?
+       if(map -> auxBuckets[i] -> key != NULL){
+                 ^~~~~~~~~~
+                 buckets
+Compilation failed
+c3e12e2
