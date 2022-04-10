@@ -516,3 +516,23 @@ hashmap.c:75:17: error: ‘HashMap {aka struct HashMap}’ has no member named �
 cc1: all warnings being treated as errors
 Compilation failed
 409bcfa
+Sun Apr 10 00:28:35 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:70:38: error: ‘capacity’ undeclared (first use in this function); did you mean ‘auxCapacity’?
+     map -> buckets = (Pair*) realloc(capacity, sizeof(Pair));
+                                      ^~~~~~~~
+                                      auxCapacity
+hashmap.c:70:38: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:74:15: error: ‘HashMap {aka struct HashMap}’ has no member named ‘auxBuckets’; did you mean ‘buckets’?
+     if(map -> auxBuckets[i] != NULL){
+               ^~~~~~~~~~
+               buckets
+hashmap.c:75:17: error: ‘HashMap {aka struct HashMap}’ has no member named ‘auxBuckets’; did you mean ‘buckets’?
+       if(map -> auxBuckets[i] -> key != NULL){
+                 ^~~~~~~~~~
+                 buckets
+Compilation failed
+e1dd0bb
