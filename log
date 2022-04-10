@@ -489,3 +489,30 @@ hashmap.c:75:17: error: ‘HashMap {aka struct HashMap}’ has no member named �
                  buckets
 Compilation failed
 c3e12e2
+Sun Apr 10 00:28:25 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:70:38: error: passing argument 1 of ‘realloc’ makes pointer from integer without a cast [-Werror=int-conversion]
+     map -> buckets = (Pair*) realloc(map->capacity, sizeof(Pair));
+                                      ^~~
+In file included from test.c:2:0:
+/usr/include/stdlib.h:549:14: note: expected ‘void *’ but argument is of type ‘long int’
+ extern void *realloc (void *__ptr, size_t __size)
+              ^~~~~~~
+In file included from test.c:4:0:
+hashmap.c:70:20: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     map -> buckets = (Pair*) realloc(map->capacity, sizeof(Pair));
+                    ^
+hashmap.c:74:15: error: ‘HashMap {aka struct HashMap}’ has no member named ‘auxBuckets’; did you mean ‘buckets’?
+     if(map -> auxBuckets[i] != NULL){
+               ^~~~~~~~~~
+               buckets
+hashmap.c:75:17: error: ‘HashMap {aka struct HashMap}’ has no member named ‘auxBuckets’; did you mean ‘buckets’?
+       if(map -> auxBuckets[i] -> key != NULL){
+                 ^~~~~~~~~~
+                 buckets
+cc1: all warnings being treated as errors
+Compilation failed
+409bcfa
